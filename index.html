@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+
+    <!-- Preloader -->
+
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+
+            <a class="nav-link" data-widget="" href="/index.html"><svg xmlns="http://www.w3.org/2000/svg"
+              width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 20 16">
+              <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+          </svg></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index3.html" class="nav-link">Mi Perfil</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Cerrar Sesión</a>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+
+
+        <!-- SidebarSearch Form -->
+
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+            <li class="nav-header"></li>
+            <li class="nav-item">
+              <a href="pages/calendar.html" class="nav-link">
+                <p>
+                  Roles
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/gallery.html" class="nav-link">
+                <p>
+                  Usuarios
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/kanban.html" class="nav-link">
+                <p>
+                  Insumos
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/kanban.html" class="nav-link">
+                <p>
+                  Compras
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/kanban.html" class="nav-link">
+                <p>
+                  Categorias
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/productos.html" class="nav-link">
+                <p>
+                  Productos
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/kanban.html" class="nav-link">
+                <p>
+                  Ventas
+                </p>
+              </a>
+            </li>
+
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <span class="border border-primary">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="card mb-2">
+              
+              <div class="col-10">
+                <h1 class="float-sm-right ml-5 text-danger my-3">Carrito de Compras</h1>
+                <br>
+                <br>
+
+
+                <div class="card card-warning" style="width: 65rem">
+
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <form>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <!-- text input -->
+                          <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-1 col-form-label">Cliente</label>
+                            <div class="col-sm-3">
+                              <input type="email" class="form-control" id="inputEmail3" placeholder="Lukas" disabled>
+                            </div>
+
+                            <div class="col-sm-6 ml-5">
+                              <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Monto</label>
+                                <div class="col-sm-6">
+                                  <input type="email" class="form-control" id="inputEmail3" placeholder="$33.234,30"
+                                    disabled disabled>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row align-items-center">
+                            <label for="inputEmail3" class="col-sm-1 col-form-label">Dirección</label>
+                            <div class="col-sm-3">
+                              <input type="email" class="form-control" id="inputEmail3" placeholder="CR80" disabled>
+                            </div>
+
+                            <div class="col-sm-6 ml-5">
+                              <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">IVA</label>
+                                <div class="col-sm-6">
+                                  <input type="email" class="form-control" id="inputEmail3" placeholder="$7.795,70"
+                                    disabled disabled>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group row align-items-center">
+                            <div class="col-sm-4">
+                            </div>
+
+                            <div class="col-sm-6 ml-5">
+                              <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">TOTAL</label>
+                                <div class="col-sm-6">
+                                  <input type="email" class="form-control" id="inputEmail3" placeholder="$41.030,00yy"
+                                    disabled >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                
+
+              </div><!-- /.col -->
+            
+              <div class="card card-warning" style="width: 65rem">
+
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    
+                    	<div class="container">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                              <th scope="col">Producto</th>
+                              <th></th>
+                              <th scope="col">Entrega</th>
+                              <th scope="col">Precio</th>
+                              <th scope="col">Cantidad</th>
+                              <th scope="col">Total</th>
+                              <th scope="col"></th>
+                              </tr>
+                            </thead>
+                            <tbody id="items">
+                              <tr>
+                                <th>
+                                  <img src="https://cdn.shopify.com/s/files/1/0492/2458/1274/products/supermercados_la_vaquita_supervaquita_detergente_ariel_1000gr_regular_cuidado_de_la_ropa_1024x1024.jpg?v=1620655004" width="100px">                                
+                                </th>
+                                <th>
+                                  DETERGENTE REGULAR ARIEL 
+                                  <br>
+                                  2000gr
+                                  <br>
+                                  ARIEL
+                                  <br>
+                                  Vendido por: exito
+                                </th>
+                                <th>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                                      <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                                    </svg>
+                                </th>
+                                <th class="text-danger">$24900</th>
+                                <th>
+                                    
+                                    <button id='disminuir' onclick="disminuir()">-</button>
+                                    
+                                    <input type='text' id="cantidad" value="1">
+                                  <script>
+                                      var inicio = 0; //se inicializa una variable en 0
+
+                                      function aumentar(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+                                      
+                                      var cantidad = document.getElementById('cantidad').value = ++inicio; //se obtiene el valor del input, y se incrementa en 1 el valor que tenga.
+                                      }
+                                      
+                                      function disminuir(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+                                      
+                                      var cantidad = document.getElementById('cantidad').value = --inicio; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+                                      }
+                                  </script>
+                                  <button id='aumentar' onclick="aumentar()">+</button>
+
+                                </th>
+                                <th>$24950</th>
+                                <th>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                      <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                    </svg>
+                                </th>
+                              </tr>
+                             
+                              <tr>
+                                  <th>
+                                    <img src="data:image/jpeg;base64,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" width="100px">                                
+                                  </th>
+                                  <th>
+                                    PIERNA LIGHT POLLOCOA 
+                                    <br>
+                                    POLLOCOA
+                                    <br>
+                                    ARIEL
+                                    <br>
+                                    Vendido por: exito
+                                  </th>
+                                  <th>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                                        <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                                      </svg>
+                                  </th>
+                                  <th>
+                                    <del>$20.100</del>
+                                    <p class="text-danger">$10900</p>
+                                    <p>$20.100kg</p>
+                                  </th>
+                                  <th>
+                                      
+                                      <button id='disminuir' onclick="disminuir()">-</button>
+                                      
+                                      <input type='text' id="cantidad" value="1">
+                                    <script>
+                                        var inicio = 0; //se inicializa una variable en 0
+  
+                                        function aumentar(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+                                        
+                                        var cantidad = document.getElementById('cantidad').value = ++inicio; //se obtiene el valor del input, y se incrementa en 1 el valor que tenga.
+                                        }
+                                        
+                                        function disminuir(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+                                        
+                                        var cantidad = document.getElementById('cantidad').value = --inicio; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+                                        }
+                                    </script>
+                                    <button id='aumentar' onclick="aumentar()">+</button>
+                                    <br>
+                                    <p style="text-align: center">1,00kg</p>
+  
+                                  </th>
+                                  <th>$16080</th>
+                                  <th>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                      </svg>
+                                  </th>
+                                </tr>
+                              
+
+                            </tbody>
+                        
+                            </table>
+                          <div class="row" id="cards"></div>
+                        </div>
+
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                </div>
+
+
+
+            </div>
+            
+            <div class="card-footer">
+              
+              <div class="col-4" style="margin-left: 40rem">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg>
+                  <i class="bi bi-plus-circle"></i>
+                <a href="./productos.html" class="text-dark"> Seguir comprando </a>
+                <button type="submit" class="btn btn-success ml-4">Enviar</button>
+                <button type="submit" class="btn btn-default float-right">Limpiar</button></div>
+              
+            </div>
+      </span><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  </div>
+  <!-- /.content-wrapper -->
+
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button)
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ChartJS -->
+  <script src="plugins/chart.js/Chart.min.js"></script>
+  <!-- Sparkline -->
+  <script src="plugins/sparklines/sparkline.js"></script>
+  <!-- JQVMap -->
+  <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Summernote -->
+  <script src="plugins/summernote/summernote-bs4.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.js"></script>
+  <!-- AdminLTE for demo purposes -->
+
+</body>
+
+</html>

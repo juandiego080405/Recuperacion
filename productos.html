@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Dashboard</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Preloader -->
+
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+
+                    <a class="nav-link" data-widget="" href="/index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 20 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index3.html" class="nav-link">Mi Perfil</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Cerrar Sesión</a>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+
+
+                <!-- SidebarSearch Form -->
+
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+                        <li class="nav-header"></li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <p>
+                                    Roles
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/gallery.html" class="nav-link">
+                                <p>
+                                    Usuarios
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/kanban.html" class="nav-link">
+                                <p>
+                                    Insumos
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/kanban.html" class="nav-link">
+                                <p>
+                                    Compras
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/kanban.html" class="nav-link">
+                                <p>
+                                    Categorias
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/productos.html" class="nav-link active">
+                                <p>
+                                    Productos
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/kanban.html" class="nav-link">
+                                <p>
+                                    Ventas
+                                </p>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <span class="border border-primary">
+                <!-- Content Header (Page header) -->
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="card mb-2">
+
+                            <div class="col-11">
+
+
+
+
+                                <div class="form-inline">
+                                    <div class="input-group" data-widget="sidebar-search">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-sidebar">
+                                                <i class="fas fa-search fa-fw"></i>
+                                            </button>
+                                        </div>
+                                        <input class="form-control form-control-sidebar" type="search" placeholder=""
+                                            aria-label="Search">
+                                    </div>
+
+
+
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        placeholder="Categoría" style="margin-left: 5rem">
+                                    <datalist id="datalistOptions">
+                                        <option value="Dama">
+                                        <option value="Caballero">
+                                        <option value="Niño">
+                                        <option value="Niña">
+                                    </datalist>
+
+
+
+
+                                    <h1 class="float-sm-right text-danger my-3" style="margin-left: 8rem">Catálogo de
+                                        Productos</h1>
+
+                                </div><!-- /.col -->
+                                <br>
+                                <br>
+
+                                <div class="d-flex justify-content-center">
+
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="./img/perfomance.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> <strong>adidas Perfomance</strong></h5>
+                                            <p class="card-text">
+                                                Running
+                                                <br>
+                                                $193.900 <del>$229.900</del>
+                                                <br>
+                                                <a class="nav-link" data-widget="" href="/index.html"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 20 16">
+                                                        <path
+                                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                                                    </svg>Agregar al carrito</a>
+                                                
+
+                                                <div class="form-group row">
+                                                        <label for="inputEmail3" class=" col-form-label">Cantidad</label>
+                                                        <div class="col-sm-4">
+                                                          <input type="number" class="form-control" id="inputEmail3" placeholder="1" >
+                                                        </div>
+                                                      </div>
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="card mx-5" style="width: 18rem;">
+                                        <img class="card-img-top" src="./img/royal.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> <strong>Royal Country</strong></h5>
+                                            <p class="card-text">
+                                                Tenis...
+                                                <br>
+                                                $89.900 <del>$149.900</del>
+                                                <br>
+                                                <a class="nav-link" data-widget="" href="/index.html"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 20 16">
+                                                        <path
+                                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                                                    </svg>Agregar al carrito</a>
+                                                 <div class="form-group row">
+                                                        <label for="inputEmail3" class=" col-form-label">Cantidad</label>
+                                                        <div class="col-sm-4">
+                                                          <input type="number" class="form-control" id="inputEmail3" placeholder="1" >
+                                                        </div>
+                                                      </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="./img/images.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> <strong>Skechers</strong></h5>
+                                            <p class="card-text">
+                                                Tenis lifestyle...
+                                                <br>
+                                                $307.900 <del>$369.900</del>
+                                                <br>
+                                                <a class="nav-link" data-widget="" href="/index.html"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 20 16">
+                                                        <path
+                                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                                                    </svg>Agregar al carrito</a>
+
+                                                 <div class="form-group row">
+                                                        <label for="inputEmail3" class=" col-form-label">Cantidad</label>
+                                                        <div class="col-sm-4">
+                                                          <input type="number" class="form-control" id="inputEmail3" placeholder="1" >
+                                                        </div>
+                                                      </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+            </span><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    </div>
+    <!-- /.content-wrapper -->
+
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+</body>
+
+</html>
